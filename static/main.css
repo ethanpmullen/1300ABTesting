@@ -8,17 +8,30 @@ header {
   padding-top: 20px;
 }
 
-.vendor-wrapper {
+.vendor-wrapper-b {
+  display: flex;
   justify-content: left;
-  padding-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+.vendor-wrapper-a {
+  display: flex;
+  justify-content: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  max-width: 200px;
 }
 
 .vendor-photo {
+  object-fit: contain;
   max-width: 200px;
-  max-height: 150px;
-  padding-right: 20px;
+  height: auto;
+  /* height: auto; */
 }
 
 .vendor-book-button {
@@ -26,7 +39,10 @@ header {
 }
 
 .content-pane {
+  display: flex;
   padding: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .fa-stack[data-count]:after {
@@ -54,6 +70,26 @@ header {
   color: #df0000;
 }
 
-.A {
-  background-color: pink;
+.photo-wrapper {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 220px;
+}
+
+#cart-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  max-width: 200px;
 }

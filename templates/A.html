@@ -64,7 +64,7 @@
     <title>cact-I + cact-you = cact-us</title>
   </head>
 
-  <body class="A">
+  <body>
     <header>
       <h1>cact-I + cact-you = cact-us</h1>
       <!-- Ideas: making it pretty/look real, making it look reliable,
@@ -77,8 +77,10 @@
     <!-- If you add any new buttons, you need to update the javascript file, for
     corresponding button id, so that clicks of that button could be logged -->
     <div class="content-pane">
-      <div class="vendor-wrapper" id="mp1">
-        <img src="../static/coppercombo.png" class="vendor-photo" />
+      <div class="vendor-wrapper-a" id="mp1">
+        <div class="photo-wrapper">
+          <img src="../static/coppercombo.png" class="vendor-photo" class="A" />
+        </div>
         <button
           class="vendor-book-button btn btn-primary"
           type="submit"
@@ -93,8 +95,10 @@
         </p>
       </div>
 
-      <div class="vendor-wrapper" id="mp2">
-        <img src="../static/geoprickly.jpg" class="vendor-photo" />
+      <div class="vendor-wrapper-a" id="mp2">
+        <div class="photo-wrapper">
+          <img src="../static/geoprickly.jpg" class="vendor-photo" />
+        </div>
         <button
           class="vendor-book-button btn btn-primary"
           type="submit"
@@ -106,8 +110,10 @@
         <p>Beautiful prickly pair in modern geometric pots. <i>$14.99</i></p>
       </div>
 
-      <div class="vendor-wrapper" id="mp3">
-        <img src="../static/garden.jpg" class="vendor-photo" />
+      <div class="vendor-wrapper-a" id="mp3">
+        <div class="photo-wrapper">
+          <img src="../static/garden.jpg" class="vendor-photo" />
+        </div>
         <button
           class="vendor-book-button btn btn-primary"
           type="submit"
@@ -122,8 +128,10 @@
         </p>
       </div>
 
-      <div class="vendor-wrapper" id="mp4">
-        <img src="../static/garden-combo.jpg" class="vendor-photo" />
+      <div class="vendor-wrapper-a" id="mp4">
+        <div class="photo-wrapper">
+          <img src="../static/garden-combo.jpg" class="vendor-photo" />
+        </div>
         <button
           class="vendor-book-button btn btn-primary"
           type="submit"
@@ -136,16 +144,15 @@
           Cacti, succulent, and garden combo in handcrafted pots. <i>$34.99</i>
         </p>
       </div>
-
-      <div id="cart-wrapper">
-        <a onclick="navigateToCheckout()">
-          <span id="cart" class="fa-stack fa-2x has-badge" data-count="0">
-            <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-            <i class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
-          </span>
-          CART
-        </a>
-      </div>
+    </div>
+    <div id="cart-wrapper">
+      <a onclick="navigateToCheckout()">
+        <span id="cart" class="fa-stack fa-2x has-badge" data-count="0">
+          <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fa fa-shopping-cart fa-stack-2x red-cart"></i>
+        </span>
+        CART
+      </a>
     </div>
 
     <!-- DO NOT EDIT below this line!! -->
